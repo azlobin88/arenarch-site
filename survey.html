@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARENARCH Player Survey</title>
+<meta name="description" content="Five minutes to shape the arena: formats, classes, match length, the beta.">
+<link rel="alternate" hreflang="en" href="survey.html">
+<link rel="alternate" hreflang="ru" href="ru/survey.html">
+<link rel="icon" href="assets/img/logo-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Cormorant+SC:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/img/logo-emblem.png" alt="">ARENARCH</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="index.html">The game</a>
+      <a href="lore.html">Lore</a>
+      <a href="survey.html" aria-current="page">Survey</a>
+      <a href="index.html#discord">Community</a>
+      <a class="lang" href="ru/survey.html" hreflang="ru" lang="ru">RU</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Player survey</p>
+        <h1 style="font-size:var(--step-3)">What should the arena be</h1>
+        <p>Eight questions, about five minutes. The developer reads every answer and decides what comes next.</p>
+      </div>
+
+      <form class="survey" id="survey" novalidate>
+        <fieldset>
+          <legend>1. Which games have you played arena PvP in?</legend>
+          <input type="text" id="q1" name="q1" placeholder="For example: MMOs, MOBAs, arena shooters">
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Which format suits you best?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q2" id="q2a" value="2x2"> 2v2</label>
+            <label><input type="radio" name="q2" id="q2b" value="3x3"> 3v3 with a team</label>
+            <label><input type="radio" name="q2" id="q2c" value="solo3x3"> 3v3 solo queue</label>
+            <label><input type="radio" name="q2" id="q2d" value="any"> All of them</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Which class will you play first?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q3" id="q3a" value="warrior"> Warrior</label>
+            <label><input type="radio" name="q3" id="q3b" value="shaman"> Shaman</label>
+            <label><input type="radio" name="q3" id="q3c" value="hunter"> Predator</label>
+            <label><input type="radio" name="q3" id="q3d" value="mage"> Mage</label>
+            <label><input type="radio" name="q3" id="q3e" value="assassin"> Assassin</label>
+            <label><input type="radio" name="q3" id="q3f" value="bloodlord"> Blood Lord</label>
+            <label><input type="radio" name="q3" id="q3g" value="necromancer"> Necromancer</label>
+            <label><input type="radio" name="q3" id="q3h" value="warlock"> Warlock</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. What bothers you most about PvP in other games?</legend>
+          <p class="hint">Pick as many as you like.</p>
+          <div class="choices">
+            <label><input type="checkbox" name="q4" id="q4a" value="gear"> Gear grind</label>
+            <label><input type="checkbox" name="q4" id="q4b" value="levels"> Leveling before arena</label>
+            <label><input type="checkbox" name="q4" id="q4c" value="healers"> Endless healing</label>
+            <label><input type="checkbox" name="q4" id="q4d" value="long"> Long matches</label>
+            <label><input type="checkbox" name="q4" id="q4e" value="queue"> Long queues</label>
+            <label><input type="checkbox" name="q4" id="q4f" value="addons"> Having to install addons</label>
+            <label><input type="checkbox" name="q4" id="q4g" value="balance"> Class imbalance</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. How long should a match last?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q5" id="q5a" value="lt10"> Under 10 minutes</label>
+            <label><input type="radio" name="q5" id="q5b" value="10-15"> 10–15 minutes</label>
+            <label><input type="radio" name="q5" id="q5c" value="15-20"> 15–20 minutes</label>
+            <label><input type="radio" name="q5" id="q5d" value="gt20"> Longer</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>6. Will you watch tournaments and streams of the game?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q6" id="q6a" value="yes"> Yes</label>
+            <label><input type="radio" name="q6" id="q6b" value="maybe"> If it's exciting</label>
+            <label><input type="radio" name="q6" id="q6c" value="no"> No, I just want to play</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>7. Want to join the beta?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q7" id="q7a" value="yes"> Yes, invite me</label>
+            <label><input type="radio" name="q7" id="q7b" value="later"> Later, at release</label>
+          </div>
+          <label class="hint" for="q7contact">Discord or Steam name to invite you (optional)</label>
+          <input type="text" id="q7contact" name="q7contact" autocomplete="off">
+        </fieldset>
+
+        <fieldset>
+          <legend>8. Anything else for the developer?</legend>
+          <textarea id="q8" name="q8" placeholder="Ideas, wishes, favourite mechanics"></textarea>
+        </fieldset>
+
+        <div class="actions">
+          <button class="btn" type="submit" id="send">Send</button>
+        </div>
+        <p class="status" id="status" hidden>Thank you! Answers will be collected once the site launches. Your answers are saved in this browser.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 ARENARCH. In development, everything shown may change.</span>
+    <nav aria-label="More">
+      <a href="index.html">The game</a>
+      <a href="lore.html">Lore</a>
+      <a href="ru/survey.html" hreflang="ru" lang="ru">Русский</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Until the survey is wired to a form service (Google Forms), answers stay in this browser only.
+  document.getElementById("survey").addEventListener("submit", function (event) {
+    event.preventDefault();
+    var answers = {};
+    new FormData(event.target).forEach(function (value, key) {
+      answers[key] = answers[key] ? [].concat(answers[key], value) : value;
+    });
+    try { localStorage.setItem("arenarch-survey", JSON.stringify(answers)); } catch (e) {}
+    document.getElementById("status").hidden = false;
+  });
+</script>
+</body>
+</html>

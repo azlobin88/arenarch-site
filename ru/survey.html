@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Опрос игроков ARENARCH</title>
+<meta name="description" content="Пять минут, чтобы сделать арену такой, как хочешь ты: форматы, классы, длина матча, бета-тест.">
+<link rel="alternate" hreflang="en" href="../survey.html">
+<link rel="alternate" hreflang="ru" href="survey.html">
+<link rel="icon" href="../assets/img/logo-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Cormorant+SC:wght@600;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="../assets/img/logo-emblem.png" alt="">ARENARCH</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="index.html">Об игре</a>
+      <a href="lore.html">Лор</a>
+      <a href="survey.html" aria-current="page">Опрос</a>
+      <a href="index.html#discord">Сообщество</a>
+      <a class="lang" href="../survey.html" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Опрос игроков</p>
+        <h1 style="font-size:var(--step-3)">Какой должна быть арена</h1>
+        <p>Восемь вопросов, около пяти минут. Ответы читает разработчик и по ним решает, что делать дальше.</p>
+      </div>
+
+      <form class="survey" id="survey" novalidate>
+        <fieldset>
+          <legend>1. В каких играх ты играл в PvP-арену?</legend>
+          <input type="text" id="q1" name="q1" placeholder="Например: MMO, MOBA, шутеры с аренами">
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Какой формат тебе ближе?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q2" id="q2a" value="2x2"> 2х2</label>
+            <label><input type="radio" name="q2" id="q2b" value="3x3"> 3х3 командой</label>
+            <label><input type="radio" name="q2" id="q2c" value="solo3x3"> 3х3 соло-очередь</label>
+            <label><input type="radio" name="q2" id="q2d" value="any"> Всё подряд</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Каким классом сыграешь первым?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q3" id="q3a" value="warrior"> Воин</label>
+            <label><input type="radio" name="q3" id="q3b" value="shaman"> Шаман</label>
+            <label><input type="radio" name="q3" id="q3c" value="hunter"> Хищник</label>
+            <label><input type="radio" name="q3" id="q3d" value="mage"> Маг</label>
+            <label><input type="radio" name="q3" id="q3e" value="assassin"> Ассасин</label>
+            <label><input type="radio" name="q3" id="q3f" value="bloodlord"> Лорд крови</label>
+            <label><input type="radio" name="q3" id="q3g" value="necromancer"> Некромант</label>
+            <label><input type="radio" name="q3" id="q3h" value="warlock"> Чернокнижник</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Что больше всего мешает в PvP других игр?</legend>
+          <p class="hint">Можно выбрать несколько.</p>
+          <div class="choices">
+            <label><input type="checkbox" name="q4" id="q4a" value="gear"> Гринд экипировки</label>
+            <label><input type="checkbox" name="q4" id="q4b" value="levels"> Прокачка до арены</label>
+            <label><input type="checkbox" name="q4" id="q4c" value="healers"> Бесконечный отхил</label>
+            <label><input type="checkbox" name="q4" id="q4d" value="long"> Долгие матчи</label>
+            <label><input type="checkbox" name="q4" id="q4e" value="queue"> Долгие очереди</label>
+            <label><input type="checkbox" name="q4" id="q4f" value="addons"> Нужно ставить аддоны</label>
+            <label><input type="checkbox" name="q4" id="q4g" value="balance"> Дисбаланс классов</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. Сколько должен длиться матч?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q5" id="q5a" value="lt10"> До 10 минут</label>
+            <label><input type="radio" name="q5" id="q5b" value="10-15"> 10–15 минут</label>
+            <label><input type="radio" name="q5" id="q5c" value="15-20"> 15–20 минут</label>
+            <label><input type="radio" name="q5" id="q5d" value="gt20"> Дольше</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>6. Будешь смотреть турниры и стримы по игре?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q6" id="q6a" value="yes"> Да</label>
+            <label><input type="radio" name="q6" id="q6b" value="maybe"> Если будет интересно</label>
+            <label><input type="radio" name="q6" id="q6c" value="no"> Нет, только играть</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>7. Хочешь в бета-тест?</legend>
+          <div class="choices">
+            <label><input type="radio" name="q7" id="q7a" value="yes"> Да, позовите</label>
+            <label><input type="radio" name="q7" id="q7b" value="later"> Позже, на релиз</label>
+          </div>
+          <label class="hint" for="q7contact">Ник в Discord или Steam, чтобы позвать (по желанию)</label>
+          <input type="text" id="q7contact" name="q7contact" autocomplete="off">
+        </fieldset>
+
+        <fieldset>
+          <legend>8. Что ещё хочешь сказать разработчику?</legend>
+          <textarea id="q8" name="q8" placeholder="Идеи, пожелания, любимые механики"></textarea>
+        </fieldset>
+
+        <div class="actions">
+          <button class="btn" type="submit" id="send">Отправить</button>
+        </div>
+        <p class="status" id="status" hidden>Спасибо! Приём ответов откроется вместе с запуском сайта. Сохранили твои ответы в этом браузере.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 ARENARCH. Игра в разработке, всё показанное может измениться.</span>
+    <nav aria-label="Ещё">
+      <a href="index.html">Об игре</a>
+      <a href="lore.html">Лор</a>
+      <a href="../survey.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Until the survey is wired to a form service (Google Forms), answers stay in this browser only.
+  document.getElementById("survey").addEventListener("submit", function (event) {
+    event.preventDefault();
+    var answers = {};
+    new FormData(event.target).forEach(function (value, key) {
+      answers[key] = answers[key] ? [].concat(answers[key], value) : value;
+    });
+    try { localStorage.setItem("arenarch-survey", JSON.stringify(answers)); } catch (e) {}
+    document.getElementById("status").hidden = false;
+  });
+</script>
+</body>
+</html>
