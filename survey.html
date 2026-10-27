@@ -118,7 +118,7 @@
         <div class="actions">
           <button class="btn" type="submit" id="send">Send</button>
         </div>
-        <p class="status" id="status" hidden>Thank you! Answers will be collected once the site launches. Your answers are saved in this browser.</p>
+        <p class="status" id="status" hidden>Thank you! Your answers went to the developer.</p>
       </form>
     </div>
   </section>
@@ -136,18 +136,7 @@
   </div>
 </footer>
 
-<script>
-  // Until the survey is wired to a form service (Google Forms), answers stay in this browser only.
-  document.getElementById("survey").addEventListener("submit", function (event) {
-    event.preventDefault();
-    var answers = {};
-    new FormData(event.target).forEach(function (value, key) {
-      answers[key] = answers[key] ? [].concat(answers[key], value) : value;
-    });
-    try { localStorage.setItem("arenarch-survey", JSON.stringify(answers)); } catch (e) {}
-    document.getElementById("status").hidden = false;
-  });
-</script>
+<script src="assets/survey.js"></script>
 <script src="assets/analytics.js"></script>
 </body>
 </html>
