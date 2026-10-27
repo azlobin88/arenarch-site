@@ -173,6 +173,18 @@ footer .wrap { padding-block: 28px; display: flex; gap: 16px 32px; flex-wrap: wr
 footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
 footer a { color: var(--dust); }
 
+/* the cookie question (assets/analytics.js): a strip along the bottom, asked once */
+.consent { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--stone); border-top: 1px solid var(--gold); box-shadow: 0 -8px 24px rgb(0 0 0 / 0.45); }
+.consent .wrap { padding-block: 14px; display: flex; gap: 12px 24px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.consent p { margin: 0; max-width: var(--measure); font-size: var(--step--1); color: var(--parchment); }
+.consent-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* the privacy page */
+.legal { max-width: var(--measure); }
+.legal h2 { font-size: var(--step-1); margin-top: 28px; margin-bottom: 8px; }
+.legal p, .legal li { color: var(--parchment); }
+.legal .btn { margin-top: 12px; }
+
 /* the promise: three blocks in a row, one column once a row would leave a hole */
 .promise .features { margin-top: 0; }
 .promise .note { margin-top: 20px; color: var(--dust); max-width: var(--measure); }
