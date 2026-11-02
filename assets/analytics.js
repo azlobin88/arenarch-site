@@ -1,5 +1,6 @@
 // Yandex Metrika, only after the visitor agrees (152-FZ, GDPR): the banner asks once, the answer stays in this browser.
-// Goals: "discord" (any Discord link), "survey" (the survey sent), "steam" (a Steam link, once there is one).
+// Goals: "discord" (any Discord link), "telegram" (a Telegram channel link), "survey" (the survey sent),
+// "steam" (a Steam link, once there is one).
 (function () {
   var COUNTER = 113823389;
   var KEY = "arenarch-analytics";
@@ -33,6 +34,7 @@
       if (!link) { return; }
       if (link.href.indexOf("discord.gg") !== -1 || link.href.indexOf("discord.com") !== -1) { goal("discord"); }
       if (link.href.indexOf("store.steampowered.com") !== -1) { goal("steam"); }
+      if (link.href.indexOf("t.me/") !== -1) { goal("telegram"); }
     });
     var survey = document.getElementById("survey");
     if (survey) { survey.addEventListener("submit", function () { goal("survey"); }); }
