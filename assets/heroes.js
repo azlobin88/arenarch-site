@@ -103,6 +103,27 @@
     return panel;
   }
 
+  function talents(hero) {
+    const section = element("div", "hero-talents");
+    section.append(element("h2", "", t("Таланты", "Talents")));
+    if (!russian) section.append(element("p", "hero-language-note", "Talent descriptions are currently available in Russian."));
+    for (const row of hero.talents) {
+      const group = element("div", "talent-row");
+      group.lang = "ru";
+      group.append(element("h3", "", row.title));
+      const options = element("ul", "talent-options");
+      for (const talent of row.options) {
+        const card = element("li", "talent-option");
+        card.append(element("h4", "", talent.name), element("p", "", talent.effect));
+        if (talent.cost) card.append(element("p", "talent-cost", talent.cost));
+        options.append(card);
+      }
+      group.append(options);
+      section.append(group);
+    }
+    return section;
+  }
+
   function profileHeader(hero) {
     const banner = element("div", "hero-banner");
     if (hero.backdrop) banner.style.setProperty("--scene", 'url("' + img + "backdrop-" + hero.backdrop + '.jpg")');
@@ -152,7 +173,7 @@
       content.append(element("h2", "", t("Стойки оружия", "Weapon styles")), tabs,
         element("h2", "", t("Способности", "Abilities")));
       if (!russian) content.append(element("p", "hero-language-note", "Full ability descriptions are currently available in Russian."));
-      content.append(abilities(hero, stance));
+      content.append(abilities(hero, stance), talents(hero));
       if (renderedHero === hero) {
         profile.append(content);
         tabs.querySelector("[aria-current]").focus({ preventScroll: true });

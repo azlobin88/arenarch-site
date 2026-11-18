@@ -94,3 +94,14 @@
   .ability-detail { order: -1; scroll-margin-top: 8rem; }
 }
 @media (prefers-reduced-motion: reduce) { .hero-card, .hero-card .hero-portrait { transition: none; } }
+
+.hero-talents { margin-top: 2.75rem; padding-top: 1.65rem; border-top: 1px solid var(--seam); }
+.talent-row + .talent-row { margin-top: 1.5rem; }
+.talent-row h3 { color: var(--dust); font-size: var(--step-1); margin-bottom: .55rem; }
+.talent-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; list-style: none; margin: 0; padding: 0; }
+.talent-option { display: grid; align-content: start; gap: .35rem; background: var(--stone); border: 1px solid var(--seam); border-top-color: var(--accent); padding: .85rem; min-width: 0; overflow-wrap: anywhere; }
+.talent-option h4 { margin: 0; font: 700 var(--step-1) var(--display); color: var(--accent); }
+.talent-cost { font-size: var(--step--1); color: var(--dust); padding-top: .4rem; border-top: 1px solid var(--seam); }
+@media (max-width: 650px) {
+  .talent-options { grid-template-columns: 1fr; }
+}
