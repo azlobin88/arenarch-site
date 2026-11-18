@@ -253,7 +253,7 @@ window.ARENARCH_HEROES = [
       "Орки",
       "Orcs"
     ],
-    "portrait": "heroes/shaman.webp",
+    "portrait": "heroes/shaman.webp?v=2",
     "backdrop": "leanorc",
     "color": "#58a9ed",
     "bio": [
