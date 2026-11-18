@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heroes — ARENARCH</title>
+<meta name="description" content="Explore the classes, weapon styles and abilities of ARENARCH.">
+<link rel="alternate" hreflang="en" href="heroes.html">
+<link rel="alternate" hreflang="ru" href="ru/heroes.html">
+<link rel="icon" href="assets/img/logo-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Cormorant+SC:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=20261030">
+<link rel="stylesheet" href="assets/heroes.css">
+<script defer src="assets/heroes-data.js"></script>
+<script defer src="assets/heroes.js"></script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/img/logo-emblem.png" alt="">ARENARCH</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="index.html">The game</a>
+      <a href="heroes.html" aria-current="page">Heroes</a>
+      <a href="lore.html">Lore</a>
+      <a href="survey.html">Survey</a>
+      <a href="index.html#discord">Community</a>
+      <a class="lang" href="ru/heroes.html" hreflang="ru" lang="ru">RU</a>
+    </nav>
+  </div>
+</header>
+<main class="hero-directory" data-heroes data-assets="assets/img/">
+  <div id="hero-catalog">
+    <div class="directory-header">
+      <div class="wrap">
+        <h1 tabindex="-1">Heroes</h1>
+        <p>Choose a hero to explore their weapon styles and abilities.</p>
+      </div>
+    </div>
+    <div class="wrap directory-roster">
+      <div class="hero-grid" id="hero-roster"></div>
+      <h2>Coming at release</h2>
+      <div class="hero-grid hero-upcoming" id="hero-upcoming"></div>
+    </div>
+  </div>
+  <div id="hero-profile" hidden></div>
+  <noscript><p class="wrap">Enable JavaScript to browse the heroes.</p></noscript>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 ARENARCH. In development, everything shown may change.</span>
+    <nav aria-label="More">
+      <a href="lore.html">Lore</a>
+      <a href="survey.html">Survey</a>
+      <a href="https://t.me/arenarch" target="_blank" rel="noopener">Telegram</a>
+      <a href="ru/heroes.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+<script defer src="assets/analytics.js"></script>
+</body>
+</html>
